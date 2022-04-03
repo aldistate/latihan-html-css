@@ -36,7 +36,7 @@ function Angkot(sopir, trayek, penumpang, kas) {
           this.kas += bayar;
           console.log('Jumlah uang masuk : ' + this.kas);
           return this.penumpang;
-        } else if (this.penumpang[i] !== namaPenumpang) {
+        } else if (i == this.penumpang.length - 1) {
           alert(namaPenumpang + ' tidak ada');
           return false;
         }
